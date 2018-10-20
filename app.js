@@ -11,10 +11,10 @@ const app = express();
 mongoose
   .connect(
     //"mongodb://localhost/node-angular" ||
-    "mongodb://robertsoaa:eJaQLekcLjNOkdS1@ds125058.mlab.com:25058/heroku_v7t85mx5"
-    //"mongodb+srv://robertsoaa:" +
-      //process.env.MONGO_ATLAS_PW +
-      //"@cluster0-e8xbs.mongodb.net/node-angular"
+    //"mongodb://robertsoaa:eJaQLekcLjNOkdS1@ds125058.mlab.com:25058/heroku_v7t85mx5"
+    "mongodb+srv://robertsoaa:" +
+      process.env.MONGO_ATLAS_PW +
+      "@cluster0-e8xbs.mongodb.net/node-angular"
       // "@cluster0-ntrwp.mongodb.net/node-angular"
       )
   .then(() => {
